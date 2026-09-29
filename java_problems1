@@ -1,0 +1,276 @@
+1)  public class Hello {
+    public static void main(String[] args) {
+    System.out.println("HELLOW WORLD");
+
+      }
+2)  import java.util.Scanner;
+    public class Addition2 {
+    public static void main(String[] args) {
+    Scanner sc = new Scanner(System.in);
+    System.out.print("Enter first number:");
+    int a = sc.nextInt();
+    System.out.print("Enter second number:");
+    int b = sc.nextInt();
+    int sum=a+b;
+    System.out.println("Sum = " + sum);
+    sc.close();
+
+    }
+
+    }
+3)  import java.util.Scanner;
+    public class Forloop1 {
+
+
+    public static void main(String[] args) {
+
+    System.out.println("enterthe m1");
+    int z=6;
+    System.out.println("enterthe t1");
+    int s=54;
+    z=z+s;
+    s=z-s;
+    z=z-s;
+    System.out.println("after swapping :\n"+"m="+z+"\n"+"t="+s);
+    }
+4)  import java.util.Scanner;
+    public class Ifstatement {
+
+    public static void main(String[] args) {
+    Scanner sc = new Scanner(System.in);
+    System.out.print("Enter a number 1:");
+    int a=sc.nextInt();
+    System.out.print("Enter a number 2 :");
+    int b=sc.nextInt();
+    if(a>b){
+    System.out.println("Largest Number is " + a);
+    }
+      else{
+    System.out.println("Largest Number is " + b);
+  }
+    sc.close();
+    }
+5)
+    public class Operator {
+
+
+    public static void main(String[] args) {
+
+    char d='A';
+    char k=(char)(d+' ');
+    System.out.println("the answer:" + k);
+    char d1='a';
+    char k1=(char)(d1-' ');
+    System.out.println("the answer:" + k1);
+
+    }
+6) package demo;
+    import java.util.Scanner;
+    public class Demo {
+    public static void main(String[] args) {
+    Scanner sc=new Scanner(System.in);
+    System.out.print("enter the length:");
+    float l=sc.nextFloat();
+    System.out.println("enterthe breadth");
+    float b=sc.nextFloat();
+    System.out.println((l%2==0)?"a is even":"a is not even");//even or odd
+    System.out.println("The area of the rectangle:"+(l*b));//area
+    System.out.println("The perimeter of the rectangle:"+(2*(l+b)));//perimeter
+
+      System.out.println("enter the radius:");
+    float r=sc.nextFloat();
+    System.out.println("The area of the rectangle:"+(3.14*r*r));//area
+    System.out.println("The circumference of the rectangle:"+(2*3.14*r));//circumference
+
+
+    System.out.print("enter the celsius:");
+    float c=sc.nextFloat();
+    System.out.println("celcius to farenheit:"+(32+(c*1.8)));//celsius to ferenheit
+    
+    System.out.print("enter the farenheit:");
+    float f=sc.nextFloat();
+    System.out.println("farenheit to celcius:"+(32+(c*1.8)));// ferenheit to celsius
+    
+    System.out.print("enter the principle:");
+    float p=sc.nextFloat();
+    System.out.println("enter the n:");
+    int n=sc.nextInt();
+    System.out.println("enter the r1:");
+    int r1=sc.nextInt();
+    System.out.println("simple interest:"+((p*n*r)/100));//simple interest
+    
+    System.out.println("enter the k");
+    int k=sc.nextInt();
+    System.out.println("enter the d");
+    int d=sc.nextInt();
+    System.out.println((k>d)?"a is maximum":"b is maximum");
+    System.out.println((k<d)?"a is minimum":"b is minimum");//min and max
+    
+    
+    System.out.println("enterthe m");
+    int m=sc.nextInt();
+    System.out.println("enterthe t");
+    int t=sc.nextInt();
+    System.out.println("before Swapping:\n"+"m="+m+"\n"+"t="+t);
+    int temp=m;
+    m=t;
+    t=temp;
+    System.out.println("after swapping :\n"+"m="+m+"\n"+"t="+t);//with temporary variable
+    
+    
+    
+    System.out.println("enterthe m1");
+    int z=sc.nextInt();
+    System.out.println("enterthe t1");
+    int s=sc.nextInt();
+    System.out.println("before Swapping:\n"+"m1="+z+"\n"+"t1="+s);
+    z=z+s;
+    s= z-s;
+    z=z-s;
+    System.out.println("after swapping :\n"+"m="+z+"\n"+"t="+s);//without temporary variable
+    
+    
+    
+    System.out.println("enter 3digit value");
+    int w=sc.nextInt();
+    System.out.println("first digit "+(w/100));
+    
+    
+    System.out.println("enter 3digit value");
+    int q=sc.nextInt();
+    System.out.println("middle digit "+((q/10)%10));
+    
+    System.out.println("enter 3digit value");
+    int x=sc.nextInt();
+    System.out.println("last digit "+((x/100)));
+    
+    
+    
+    System.out.println("sum of digit "+((w/100)+((q/10)%10)+((x/100)%10)));
+    
+    
+    System.out.println("last digit "+w+x+q);
+    
+    
+    
+    }
+    
+    }
+7)    package demo;
+      
+      public class Dr{
+      String name;
+              int reg_no;
+              static String clg;
+              void disp(){
+      
+              System.out.println(name);
+              System.out.println(reg_no);
+              System.out.println(clg);
+             
+              }
+              public static void main(String[] args){
+              Dr dr=new Dr();
+              dr.name="Karthika";
+                  dr.reg_no=54;
+                  clg="VCET";
+                   dr.disp();
+                   Dr dr2=new Dr();
+                   dr2.name="harsini";
+                   dr2.reg_no=42;
+                   clg="hr";
+                   dr2.disp();
+                   Dr dr3=new Dr();
+                    dr3.name="theja";
+                    dr3.reg_no=06;
+                    clg="VCET";
+                     dr3.disp();
+                     System.out.println(dr2.name);
+              }
+             
+      
+      }
+      8)
+      package demo;
+      import java.util.Scanner;
+      public class drr {
+      public static void main(String[] args) {
+      Scanner sc=new Scanner(System.in);
+      System.out.print("enter the mark of the subject 1:");
+      int a=sc.nextInt();
+      System.out.println("enter the mark of the subject 2:");
+      int b=sc.nextInt();
+      System.out.print("enter the mark of the subject 1:");
+      int c=sc.nextInt();
+      System.out.println("enter the mark of the subject 2:");
+      int d=sc.nextInt();
+      System.out.print("enter the mark of the subject 1:");
+      int e=sc.nextInt();
+      
+      
+      System.out.println((l%2==0)?"a is even":"a is not even");
+      
+      }
+      9)
+      package demo;
+      import java.util.Scanner;
+      public class krr {
+      public static void main(String[] args) {
+      Scanner sc=new Scanner(System.in);
+      System.out.print("enter the value of a:");
+      int a=sc.nextInt();
+             if(a%2==0 && a%3==0 && a%5==0){
+      System.out.println("the number is divided by 2,3 and 5");
+      }
+             else if(a%2==0 && a%3==0){
+            System.out.println("the number is divided by 2 and 3");
+           
+             }
+             else if(a%3==0 && a%5==0){
+            System.out.println("the number is divided by 5 and 3");
+           
+             }
+             else if(a%2==0 && a%5==0){
+            System.out.println("the number is divided by 2 and 5");
+           
+             }
+             else if(a%2==0){
+      System.out.println("the number is divided by 2");
+      }
+             else if(a%3==0){
+      System.out.println("the number is divided by 3");
+             }
+             else if(a%5==0){
+      System.out.println("the number is divided by 5 ");
+      }
+             
+      else{
+      System.out.print("not divisible by 2,3 and 5 ");
+      }
+      
+      }
+      }
+      10)
+      package demo;
+      import java.util.Scanner;
+      public class kd {
+      public static void main(String[] args) {
+      Scanner sc=new Scanner(System.in);
+      System.out.print("enter the value of a:");
+      int a=sc.nextInt();
+      if(a%3==0 && a%5==0){
+            System.out.println("FIZZ BUZZ");
+            }
+      else if(a%3==0){
+      System.out.println("FIZZ");
+             }
+             else if(a%5==0){
+      System.out.println("BUZZ");
+      }
+             else{
+            System.out.println("invalid");
+      
+             }
+      }
+      
+      }
