@@ -1,0 +1,144 @@
+1)
+package demo;
+import java.util.Scanner;
+public class kd2 {
+
+public static void main(String[] args) {
+Scanner sc=new Scanner(System.in);
+System.out.print("enter the units:");
+int m=sc.nextInt();
+if(m<=0){
+      System.out.println("invalid");
+      }
+else if(m>=1 && m<=100){
+System.out.println("Amount="+(m*1.5));
+       }
+       else if(m>=101 && m<=200){
+System.out.println("Amount="+((100*1.5)+((m-100)*2.5)));
+}
+       else if(m>=201 && m<=300){
+System.out.println("Amount="+((100*1.5)+((100*2.5)+((m-200)*3.5))));
+}
+       else if(m>=301 && m<=400){
+System.out.println("Amount="+((100*1.5)+(100*2.5)+(100*3.5)+((m-300)*4.5)));
+}
+       else{
+      System.out.println("Amount="+((100*1.5)+(100*2.5)+(100*3.5)+(100*4.5)+((m-400)*5)));
+
+       }
+}
+}
+
+2)
+package demo;
+import java.util.Scanner;
+public class drr {
+public static void main(String[] args) {
+Scanner sc=new Scanner(System.in);
+System.out.print("enter the age:");
+int a=sc.nextInt();
+if (a>=18){
+System.out.println("eligible for vote");
+}
+else{
+System.out.println("not eligible for vote");
+}
+
+
+
+}
+
+}
+3)
+package demo;
+import java.util.Scanner;
+public class drr {
+public static void main(String[] args) {
+Scanner sc=new Scanner(System.in);
+System.out.print("enter the character:");
+char a=sc.next().charAt(0);
+if (a == 'a'||a=='e'||a=='i'||a=='o'||a=='u'||a == 'A'||a=='E'||a=='I'||a=='O'||a=='U'){
+System.out.println("vowels");
+}
+else{
+System.out.println("consonant");
+}
+
+
+
+}
+
+}
+
+
+5)
+package demo;
+import java.util.Scanner;
+public class kd2 {
+
+public static void main(String[] args) {
+Scanner sc=new Scanner(System.in);
+System.out.print("enter the value of a:");
+int a=sc.nextInt();
+System.out.print("enter the value of b:");
+int b=sc.nextInt();
+System.out.print("enter the value of c:");
+int c=sc.nextInt();
+if(a<b && a<c){
+      System.out.println("a is minimum");
+      }
+else if(b<c){
+System.out.println("b is minimum");
+       }
+       else{
+System.out.println("c is minimum");
+}
+}
+}
+
+6)
+package demo;
+import java.util.Scanner;
+public class kd {
+public static void main(String[] args) {
+Scanner sc=new Scanner(System.in);
+System.out.print("enter the value of a:");
+int a=sc.nextInt();
+System.out.print("enter the value of b:");
+int b=sc.nextInt();
+System.out.print("enter the value of c:");
+int c=sc.nextInt();
+if(a>b && a>c){
+      System.out.println("a is greater");
+      }
+else if(b>c){
+System.out.println("b is greater");
+       }
+       else{
+System.out.println("c is greater");
+}
+     
+       }
+}
+
+7)
+package demo;
+import java.util.Scanner;
+public class krr {
+public static void main(String[] args) {
+Scanner sc=new Scanner(System.in);
+System.out.print("enter the value of a:");
+int a=sc.nextInt();
+if(a>0){
+      System.out.println("a is positive");
+      }
+else if(a<0){
+System.out.println("a is negative");
+       }
+       else{
+System.out.println("a is zero");
+}
+
+}
+}
+
