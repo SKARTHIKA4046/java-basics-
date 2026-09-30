@@ -1,0 +1,345 @@
+1)
+package demo;
+import java.util.*;
+public class drr {
+public static void main(String[] args) {
+Scanner sc=new Scanner(System.in);
+System.out.println("enter the number:");
+int n=sc.nextInt();
+int m=Integer.MIN_VALUE;
+int m1=Integer.MAX_VALUE;
+int c1=0;
+for( int i=1;i<=n;i++){
+for(int k=1;k<=i;k++){
+if(i%k==0){
+c1=c1+1;
+}
+}
+System.out.println("the fcators count of "+i+" is "+c1);
+if(c1>m){
+m=c1;
+}
+if(c1<m1){
+m1=c1;
+}
+c1=0;
+}
+System.out.println("the max number of factor"+m);
+System.out.println("the max number of factor"+m1);
+sc.close();
+}
+}
+
+
+
+2)
+package demo;
+import java.util.Scanner;
+public class kd2 {
+
+public static void main(String[] args) {
+Scanner sc=new Scanner(System.in);
+System.out.println("enter the number:");
+int n=sc.nextInt();
+int n1=1;
+for( int i=1;i<=n;i++){
+for(int j=1;j<=i+1;j++){
+System.out.print(n1+" ");
+n1++;
+}
+System.out.println("\n");
+
+}
+sc.close();
+
+}
+}
+package demo;
+import java.util.Scanner;
+public class kd2 {
+
+public static void main(String[] args) {
+Scanner sc=new Scanner(System.in);
+System.out.println("enter the number:");
+int n=sc.nextInt();
+int n1=n;
+int s=0;
+while(n!=0){
+int k=n%10;
+int p=1;
+for(int i=1;i<=k;i++){
+p=p*i;
+}
+s=s+p;
+   n=n/10;
+}
+System.out.println(s);
+if(n1==s){
+System.out.println("it is an strong number");
+}
+else{
+System.out.println("it is an not strong number");
+}
+sc.close();
+
+}
+}    
+
+3)
+
+package demo;
+import java.util.*;
+public class drr {
+public static void main(String[] args) {
+Scanner sc=new Scanner(System.in);
+System.out.println("enter the number:");
+int n=sc.nextInt();
+int n1=n;
+int n2=n;
+int c=0;
+while(n!=0){
+c=c+1;
+   n=n/10;
+}
+int s=0;
+while(n1!=0){
+int k=n1%10;
+int p=1;
+for(int i=1;i<=c;i++){
+p=p*k;
+}
+s=s+p;
+   n1=n1/10;
+}
+System.out.println(s);
+if(n2==s){
+System.out.println("it is an armstrong number");
+}
+else{
+System.out.println("it is an not armstrong number");
+}
+sc.close();
+}
+}
+
+
+
+
+4)
+
+package demo;
+import java.util.Scanner;
+public class kd {
+public static void main(String[] args) {
+Scanner sc=new Scanner(System.in);
+System.out.println("enter the number n: ");
+int n=sc.nextInt();
+int n1=n;
+int sum=0;
+for(int i=1;i<n;i++){
+if(n%i==0){
+sum=sum+i;
+}
+}
+if (n1==sum){
+System.out.println("it is an perfect number");
+}
+else{
+System.out.println("it is not an perfect number");
+}
+sc.close();
+       }
+}
+
+5)
+
+package demo;
+import java.util.Scanner;
+public class kd2 {
+
+public static void main(String[] args) {
+Scanner sc=new Scanner(System.in);
+System.out.println("enter the number:");
+int n=sc.nextInt();
+int n1=n;
+int s=0;
+while(n!=0){
+int k=n%10;
+int p=1;
+for(int i=1;i<=k;i++){
+p=p*i;
+}
+s=s+p;
+   n=n/10;
+}
+System.out.println(s);
+if(n1==s){
+System.out.println("it is an strong number");
+}
+else{
+System.out.println("it is an not strong number");
+}
+sc.close();
+
+}
+}
+
+
+6)
+
+package demo;
+import java.util.Scanner;
+public class kd {
+public static void main(String[] args) {
+Scanner sc=new Scanner(System.in);
+System.out.println("enter the number:");
+int n=sc.nextInt();
+for( int i=0;i<n;i++){
+for(int k=1;k<=n-i;k++){
+System.out.print("   ");
+}
+for(int j=1;j<=2*i+1;j++){
+
+System.out.print(" * ");
+
+}
+System.out.print("\n");
+       
+sc.close();
+}
+}}
+
+
+7)
+package demo;
+import java.util.*;
+public class drr {
+public static void main(String[] args) {
+Scanner sc=new Scanner(System.in);
+System.out.println("enter the number:");
+int n=sc.nextInt();
+for( int i=1;i<=n;i++){
+for (int j=0;j<i;j++){
+System.out.print(" * ");
+
+}
+System.out.print("\n");
+}
+sc.close();
+}
+}
+
+
+8)
+
+package demo;
+import java.util.Scanner;
+public class kd2 {
+
+public static void main(String[] args) {
+Scanner sc=new Scanner(System.in);
+System.out.println("enter the number:");
+int n=sc.nextInt();
+int k=0;
+int d=1;
+for( int i=1;i<=n;i++){
+System.out.print(k+" ");
+int t=k;
+k=d;
+   d=t+d;
+}
+sc.close();
+
+}
+}
+
+
+9)
+
+package demo;
+import java.util.*;
+public class drr {
+public static void main(String[] args) {
+Scanner sc=new Scanner(System.in);
+System.out.println("enter the number:");
+int n=sc.nextInt();
+for( int i=1;i<=n;i++){
+for(int k=0;k<i;k++){
+System.out.print("   ");
+
+}
+for (int j=0;j<n-i;j++){
+System.out.print(" * ");
+
+}
+
+System.out.print("\n");
+}
+sc.close();
+}
+}
+
+
+
+
+
+10)
+
+package demo;
+import java.util.Scanner;
+public class kd {
+public static void main(String[] args) {
+Scanner sc=new Scanner(System.in);
+System.out.println("enter the number:");
+int n=sc.nextInt();
+for( int i=-n;i<=n;i++){
+int l=i;
+if(l<0){
+l=-(l);
+}
+else{
+l=l;
+}
+for(int k=1;k<=l;k++){
+System.out.print("   ");
+}
+for(int j=1;j<=n-l*2;j++){
+
+System.out.print(" * ");
+
+}
+System.out.print("\n");
+       
+sc.close();
+}
+}}
+
+
+11)package demo;
+import java.util.Scanner;
+public class kd2 {
+
+public static void main(String[] args) {
+Scanner sc=new Scanner(System.in);
+System.out.println("enter the number:");
+int n=sc.nextInt();
+for( int i=0;i<n;i++){
+for(int j=0;j<n;j++){
+if(i==0 || j==0 ||j==n-1 || i==n-1){
+System.out.print(" * ");
+}
+else{
+System.out.print("   ");
+}
+}
+System.out.println();
+
+}
+sc.close();
+
+
+}
+}
+
+
+
