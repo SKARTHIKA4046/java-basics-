@@ -1,0 +1,481 @@
+1)
+package demo;
+import java.util.*;
+public class drr {
+public static void main(String[] args) {
+Scanner sc=new Scanner(System.in);
+System.out.println("enter the number:");
+int n=sc.nextInt();
+int m=Integer.MIN_VALUE;
+int m1=Integer.MAX_VALUE;
+int c1=0;
+for( int i=1;i<=n;i++){
+for(int k=1;k<=i;k++){
+if(i%k==0){
+c1=c1+1;
+}
+}
+System.out.println("the fcators count of "+i+" is "+c1);
+if(c1>m){
+m=c1;
+}
+if(c1<m1){
+m1=c1;
+}
+c1=0;
+}
+System.out.println("the max number of factor"+m);
+System.out.println("the max number of factor"+m1);
+sc.close();
+}
+}
+
+
+
+2)
+package demo;
+import java.util.Scanner;
+public class kd {
+public static void main(String[] args) {
+Scanner sc=new Scanner(System.in);
+System.out.print("enter the n value:");
+int n=sc.nextInt();
+    int a[]=new int[n];
+    for(int i=0;i<n;i++){
+    a[i]=sc.nextInt();
+    }
+    System.out.print("array elements : ");
+    for(int i=0;i<n;i++){
+    System.out.print(a[i]+" ");
+    }
+    System.out.println();
+    System.out.print("even numbers : ");
+    for(int i=0;i<n;i++){
+    if(a[i]%2==0){
+    System.out.print(a[i]+" ");
+    }}
+    System.out.println();
+   System.out.print("odd numbers : ");
+for(int j=0;j<n;j++){
+if(a[j]%2!=0){
+System.out.print(a[j]+" ");
+    }}
+
+}}
+
+
+
+
+
+3)
+package demo;
+import java.util.Scanner;
+public class kd {
+public static void main(String[] args) {
+Scanner sc=new Scanner(System.in);
+System.out.print("enter the n value:");
+int n=sc.nextInt();
+    int a[]=new int[n];
+    for(int i=0;i<n;i++){
+    a[i]=sc.nextInt();
+    }
+    System.out.print("array elements : ");
+    for(int i=0;i<n;i++){
+    System.out.print(a[i]+" ");
+    }
+    System.out.println();
+    System.out.print("even numbers : ");
+    int sum=0;
+    int c=0;
+    for(int i=0;i<n;i++){
+    if(a[i]%2==0){
+    System.out.print(a[i]+" ");
+    sum=sum+a[i];
+    c=c+1;
+    }}
+   
+    System.out.println();
+    System.out.println("even sum: "+sum);
+    System.out.println("even count: "+c);
+    System.out.println();
+   System.out.print("odd numbers reverse order : ");
+   int sum1=0;
+    int c1=0;
+for(int j=n-1;j>=0;j--){
+if(a[j]%2!=0){
+System.out.print(a[j]+" ");
+sum1=sum1+a[j];
+    c1=c1+1;
+    }
+}
+System.out.println();
+   
+System.out.println("odd sum: "+sum1);
+    System.out.println("odd count: "+c1);
+}}
+
+
+
+
+
+4)
+package demo;
+
+import java.util.*;
+
+public class drr {
+public static void main(String[] args) {
+Scanner sc = new Scanner(System.in);
+System.out.print("enter the n value:");
+int n = sc.nextInt();
+int a[] = new int[n];
+for (int i = 0; i < n; i++) {
+a[i] = sc.nextInt();
+}
+System.out.print("array elements : ");
+int sum = 0;
+for (int i = 0; i < n; i++) {
+sum = sum + a[i];
+System.out.print(a[i] + " ");
+}
+System.out.println();
+int max = Integer.MIN_VALUE;
+int max1= Integer.MIN_VALUE;
+int min = Integer.MAX_VALUE;
+for (int i = 0; i < n; i++) {
+if (max < a[i]) {
+max1=max;
+max=a[i];
+}
+
+if(max1<a[i] && a[i]!=max){
+max1=a[i];
+}
+
+if (min > a[i]) {
+min = a[i];
+}
+}
+System.out.println("Max element is :" + max);
+System.out.println("second Max element is :" + max1);
+System.out.print("Min element is :" + min);
+
+System.out.println();
+System.out.println("the prime numbers are:");
+for (int j = 0; j < n; j++) {
+int c = 0;
+for (int i = 1; i <= a[j]; i++) {
+if (a[j] % i == 0) {
+c = c + 1;
+}
+}
+if (c == 2) {
+System.out.println(a[j]);
+}
+}
+System.out.println(Arrays.toString(a));
+Arrays.sort(a);
+System.out.println(Arrays.toString(a);
+
+
+
+5)
+
+package demo;
+
+import java.util.*;
+
+public class drr {
+public static void main(String[] args) {
+Scanner sc = new Scanner(System.in);
+System.out.print("enter the n value:");
+int n = sc.nextInt();
+int a[] = new int[n];
+for (int i = 0; i < n; i++) {
+a[i] = sc.nextInt();
+}
+System.out.print("array elements : ");
+int sum = 0;
+for (int i = 0; i < n; i++) {
+sum = sum + a[i];
+System.out.print(a[i] + " ");
+}
+System.out.println();
+
+System.out.print("even numbers : ");
+    for(int i=0;i<n;i++){
+    if(a[i]%2==0){
+    System.out.print(a[i]+" ");
+    }}
+for(int j=n-1;j>=0;j--){
+if(a[j]%2!=0){
+System.out.print(a[j]+" ");
+    }
+}
+System.out.println(a);
+sc.close();
+}
+}
+6)
+package demo;
+import java.util.Scanner;
+public class kd {
+public static void main(String[] args) {
+Scanner sc=new Scanner(System.in);
+System.out.print("enter the n value:");
+int n=sc.nextInt();
+    int a[]=new int[n];
+    for(int i=0;i<n;i++){
+    a[i]=sc.nextInt();
+    }
+    System.out.print("array elements : ");
+    for(int i=0;i<n;i++){
+    System.out.print(a[i]+" ");
+    }
+    System.out.println();
+    System.out.print("even numbers : ");
+    int sum=0;
+    int c=0;
+    for(int i=0;i<n;i++){
+    if(a[i]%2==0){
+    System.out.print(a[i]+" ");
+    sum=sum+a[i];
+    c=c+1;
+    }}
+   
+    System.out.println();
+    System.out.println("even sum: "+sum);
+    System.out.println("even count: "+c);
+    System.out.println();
+   System.out.print("odd numbers reverse order : ");
+   int sum1=0;
+    int c1=0;
+for(int j=n-1;j>=0;j--){
+if(a[j]%2!=0){
+System.out.print(a[j]+" ");
+sum1=sum1+a[j];
+    c1=c1+1;
+    }
+}
+System.out.println();
+   
+System.out.println("odd sum: "+sum1);
+    System.out.println("odd count: "+c1);
+    System.out.println("even index values : ");
+    for(int i=0;i<n;i=i+2){
+    System.out.print(a[i]+" ");
+    }
+    System.out.println();
+    System.out.print("SQUARE of the elements : ");
+    for(int i=0;i<n;i++){
+     System.out.print(a[i]*a[i]+" ");
+   
+    }
+    int k=0;
+    int d=n-1;
+   
+    for(int i =0;i<n/2;i++){
+    int temp=a[k];
+    a[k]=a[d];
+    a[d]=temp;
+    k++;
+    d--;
+    }
+    System.out.println();
+    System.out.print("reverse of the element : ");
+    for(int i=0;i<n;i++){
+
+    System.out.print(a[i]+" ");
+    }
+
+    }
+}
+
+
+
+
+7)
+
+package demo;
+
+import java.util.*;
+
+public class drr {
+public static void main(String[] args) {
+Scanner sc = new Scanner(System.in);
+System.out.print("enter the n value:");
+int n = sc.nextInt();
+int a[] = new int[n];
+for (int i = 0; i < n; i++) {
+a[i] = sc.nextInt();
+}
+System.out.print("array elements : ");
+int sum = 0;
+for (int i = 0; i < n; i++) {
+sum = sum + a[i];
+System.out.print(a[i] + " ");
+}
+System.out.println();
+
+System.out.print("even numbers : ");
+    for(int i=0;i<n;i++){
+    if(a[i]%2==0){
+    System.out.print(a[i]+" ");
+    }}
+for(int j=n-1;j>=0;j--){
+if(a[j]%2!=0){
+System.out.print(a[j]+" ");
+    }
+}
+System.out.println();
+sc.close();
+}
+  }
+
+  
+sc.close();
+}
+}}
+
+
+8)
+package demo;
+import java.util.Scanner;
+public class drr {
+public static void main(String[] args) {
+Scanner sc=new Scanner(System.in);
+System.out.println("enter the number:");
+int n=sc.nextInt();
+int c=0;
+int c1=0;
+for(int i=1;i<=n;i++){
+if (i%2==0){
+c=c+i;
+
+}
+else{
+c1=c1+i;
+}
+}
+System.out.println("even sum:"+c);
+System.out.println("odd sum:"+c1);
+sc.close();
+}}
+
+9)
+package demo;
+import java.util.Scanner;
+public class drr {
+public static void main(String[] args) {
+Scanner sc=new Scanner(System.in);
+System.out.println("enter the number:");
+int n=sc.nextInt();
+for(int i=1;i<=n;i++){
+if (n%i==0){
+System.out.println(i);
+
+}
+
+}
+
+sc.close();
+}}
+
+10)
+package demo;
+import java.util.Scanner;
+public class drr {
+public static void main(String[] args) {
+Scanner sc=new Scanner(System.in);
+System.out.println("enter the number:");
+int n=sc.nextInt();
+int c=1;
+System.out.println("factors:");
+for(int i=1;i<=n;i++){
+if (n%i==0){
+System.out.println(i);
+
+}
+c=c*i;
+
+}
+System.out.println("factorial:"+c);
+sc.close();
+}}
+
+
+11)
+package demo;
+import java.util.Scanner;
+public class drr {
+public static void main(String[] args) {
+Scanner sc=new Scanner(System.in);
+System.out.println("enter the number:");
+int n=sc.nextInt();
+int c=0;
+
+if(n==1){
+System.out.println("The given number is neither prime nor an composite");
+return;
+}
+for(int i=2;i<n;i++){
+if (n%i==0){
+c=c+1;
+}
+}
+ if (c==0){
+ System.out.println("The given number is prime");
+ }
+ else{
+ System.out.println("The given number is composite");
+ }
+
+sc.close();
+}}
+
+
+12)
+package demo;
+import java.util.Scanner;
+public class drr {
+public static void main(String[] args) {
+Scanner sc=new Scanner(System.in);
+System.out.println("enter the number:");
+int n=sc.nextInt();
+for(int i=1;i<=10;i++){
+
+ System.out.println(i+" X "+n+" = "+i*n);
+
+
+sc.close();
+}
+}}
+
+
+13)
+package demo;
+import java.util.Scanner;
+public class drr {
+public static void main(String[] args) {
+Scanner sc=new Scanner(System.in);
+System.out.println("enter the number:");
+int n=sc.nextInt();
+int c=0;
+int s=0;
+while(n>0){
+int k=n%10;
+s=s+k;
+c=c+1;
+   n=n/10;
+}
+
+System.out.println("length of digit : "+c);
+System.out.println("sum of digit: "+s);
+sc.close();
+}
+}
+
+
+
+
+  
